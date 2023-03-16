@@ -1,0 +1,19 @@
+server:
+  19191
+
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.164.101:3388/redisTest?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8&allowMultiQueries=true&allowPublicKeyRetrieval=true&useAffectedRows=true
+  redis:
+    host: 192.168.164.101
+    #password: null
+    lettuce:
+      pool:
+        max-idle: 16
+        max-active: 8
+        min-idle: 8
+  devtoolls:
+    restart:
+      enable: true
